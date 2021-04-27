@@ -1,0 +1,24 @@
+	Um método virtual é um método que pode ser sobrescrito pela classe derivada, fazendo com que objetos da classe derivada 
+que forem referenciados com o tipo da classe base, executem a versão do método que foi escrito na classe derivada.
+	Um método puramente virtual é um método que não é implementado, sua implementação é feita nas classes derivadas, deferente 
+de métodos virtuais, as classes que possuírem pelo menos um método puramente virtual são chamadas de classes abstratas e não podem 
+ser instanciadas, e obriga as classes derivadas a implementarem os métodos puramente virtuais, funciona como uma espécie de "contrato".
+	Classes que possuem apenas métodos virtuais são chamadas de interfaces e servem para padronizar o código e garantir que todas
+as classes derivadas irão se comportar da mesma maneira.
+	Como exemplo de interface podemos imaginar um jogo de RPG que possua a classe "classe" com o método "realizar ataque" onde cada 
+classe derivada irá implementar de uma maneira diferente:
+class Classe{
+	public:
+	virtual void realizarAtaque(); //método virtual
+
+};
+//classe que herda de "Classe"
+class Mago:public Classe{
+	Mago( string nome ){} //Construtor
+	void realizarAtaque(){
+		cout >> "bola de fogo!";
+	}
+
+}; 
+
+

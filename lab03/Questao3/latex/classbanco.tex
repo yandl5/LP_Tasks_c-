@@ -1,0 +1,122 @@
+\hypertarget{classbanco}{}\section{banco Class Reference}
+\label{classbanco}\index{banco@{banco}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classbanco_a79c3043a6d839b638167b9cb8491c5b5}{criar\+Conta}} (std\+::string agencia, int numero, double limite, double saldo, std\+::string tipo)
+\begin{DoxyCompactList}\small\item\em Método para criar uma nova conta corrente ou poupança. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbanco_ac2da6ef968feef36e1333e37e1b8835b}\label{classbanco_ac2da6ef968feef36e1333e37e1b8835b}} 
+void \mbox{\hyperlink{classbanco_ac2da6ef968feef36e1333e37e1b8835b}{excluir\+Conta}} (int num)
+\begin{DoxyCompactList}\small\item\em Método para excluir uma conta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classbanco_ab476edc04466510bb36cb2a4d04c6cce}\label{classbanco_ab476edc04466510bb36cb2a4d04c6cce}} 
+void {\bfseries print} ()
+\item 
+void \mbox{\hyperlink{classbanco_a9ae918d40986ad66ba6b06874dd51ceb}{saque}} (int \mbox{\hyperlink{classconta}{conta}}, double valor)
+\begin{DoxyCompactList}\small\item\em Método para realizar o saque, nesse método primeiro se identifica a conta em seguida checa o limite e valida a transação, salvando a movimentação. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanco_a5299f885390fee021a84ffb309a0ca2f}{deposito}} (int \mbox{\hyperlink{classconta}{conta}}, double valor)
+\begin{DoxyCompactList}\small\item\em Método para realizar depósitio. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanco_a81638b3957b2c422e58df4ace22d0d55}{transferencia}} (int contaA, int contaB, double valor)
+\begin{DoxyCompactList}\small\item\em Método para realizar transferência se identifica as contas e faz o processo de verificação do serviço, em seguida transfere o valor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanco_ab13b225a8005a75a31f2c2938b9869e1}{extrato}} (int num)
+\begin{DoxyCompactList}\small\item\em Método para gerar o extrato bancário. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classbanco_ac2ca2d3e9a02bf099e3b1deb5303c2ce}{write}} (int num)
+\begin{DoxyCompactList}\small\item\em Método para escrever no extrato bancário. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classbanco_a79c3043a6d839b638167b9cb8491c5b5}\label{classbanco_a79c3043a6d839b638167b9cb8491c5b5}} 
+\index{banco@{banco}!criar\+Conta@{criar\+Conta}}
+\index{criar\+Conta@{criar\+Conta}!banco@{banco}}
+\subsubsection{\texorpdfstring{criar\+Conta()}{criarConta()}}
+{\footnotesize\ttfamily void banco\+::criar\+Conta (\begin{DoxyParamCaption}\item[{std\+::string}]{agencia,  }\item[{int}]{numero,  }\item[{double}]{limite,  }\item[{double}]{saldo,  }\item[{std\+::string}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Método para criar uma nova conta corrente ou poupança. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Utiliza-\/se} & como parâmetros variáveis necessárias a construção de uma nova conta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanco_a5299f885390fee021a84ffb309a0ca2f}\label{classbanco_a5299f885390fee021a84ffb309a0ca2f}} 
+\index{banco@{banco}!deposito@{deposito}}
+\index{deposito@{deposito}!banco@{banco}}
+\subsubsection{\texorpdfstring{deposito()}{deposito()}}
+{\footnotesize\ttfamily void banco\+::deposito (\begin{DoxyParamCaption}\item[{int}]{conta,  }\item[{double}]{valor }\end{DoxyParamCaption})}
+
+
+
+Método para realizar depósitio. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Número} & da conta e valor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanco_ab13b225a8005a75a31f2c2938b9869e1}\label{classbanco_ab13b225a8005a75a31f2c2938b9869e1}} 
+\index{banco@{banco}!extrato@{extrato}}
+\index{extrato@{extrato}!banco@{banco}}
+\subsubsection{\texorpdfstring{extrato()}{extrato()}}
+{\footnotesize\ttfamily void banco\+::extrato (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Método para gerar o extrato bancário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Número} & da conta \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanco_a9ae918d40986ad66ba6b06874dd51ceb}\label{classbanco_a9ae918d40986ad66ba6b06874dd51ceb}} 
+\index{banco@{banco}!saque@{saque}}
+\index{saque@{saque}!banco@{banco}}
+\subsubsection{\texorpdfstring{saque()}{saque()}}
+{\footnotesize\ttfamily void banco\+::saque (\begin{DoxyParamCaption}\item[{int}]{conta,  }\item[{double}]{valor }\end{DoxyParamCaption})}
+
+
+
+Método para realizar o saque, nesse método primeiro se identifica a conta em seguida checa o limite e valida a transação, salvando a movimentação. 
+
+contas correntes podem ficar negativas, com o intuito de correr juros com base na negativação 
+\begin{DoxyParams}{Parameters}
+{\em Número} & da conta e valor \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanco_a81638b3957b2c422e58df4ace22d0d55}\label{classbanco_a81638b3957b2c422e58df4ace22d0d55}} 
+\index{banco@{banco}!transferencia@{transferencia}}
+\index{transferencia@{transferencia}!banco@{banco}}
+\subsubsection{\texorpdfstring{transferencia()}{transferencia()}}
+{\footnotesize\ttfamily void banco\+::transferencia (\begin{DoxyParamCaption}\item[{int}]{contaA,  }\item[{int}]{contaB,  }\item[{double}]{valor }\end{DoxyParamCaption})}
+
+
+
+Método para realizar transferência se identifica as contas e faz o processo de verificação do serviço, em seguida transfere o valor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Números} & das contas e valor a ser transferido \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classbanco_ac2ca2d3e9a02bf099e3b1deb5303c2ce}\label{classbanco_ac2ca2d3e9a02bf099e3b1deb5303c2ce}} 
+\index{banco@{banco}!write@{write}}
+\index{write@{write}!banco@{banco}}
+\subsubsection{\texorpdfstring{write()}{write()}}
+{\footnotesize\ttfamily void banco\+::write (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})}
+
+
+
+Método para escrever no extrato bancário. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Número} & da conta \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+banco.\+h\item 
+banco.\+cpp\end{DoxyCompactItemize}

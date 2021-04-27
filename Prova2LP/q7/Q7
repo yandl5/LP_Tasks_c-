@@ -1,0 +1,9 @@
+	O grande problema da questão se encontrava nas definições da classe mãe nas classes filhas, a partir do momento que se utiliza private os métodos e atributos da classe mãe se tornam inacessíveis a classe filha, gerando problemas de compilação e por consequência erros no código. O problema é simplesmente solucionado com a remoção do private para inserção do public.
+	No processo de construção é construído primeiro a classe mãe e depois a filha, já no processo de destruição é ao contrário, primeiro o destrutor da classe filha é chamado depois o destrutor da classe mãe.
+	Desse modo temos a seguinte ordem hierárquica no processo de construção e destruição de gerente respectivamente:
+	contrução:Pessoa-Empregado-Gerente.
+	destruição:Gerente-Empregado-Pessoa.
+	Para a construção e destruição de Aluno temos:
+	construção:Pessoa-Aluno.
+	Destruição:Aluno-Pessoa.
+

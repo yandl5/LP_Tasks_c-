@@ -1,0 +1,88 @@
+\hypertarget{classconta}{}\section{conta Class Reference}
+\label{classconta}\index{conta@{conta}}
+Inheritance diagram for conta\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classconta}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classconta_a56dd4dac755dbbcda1d7fdb61bb8245f}{conta}} (std\+::string agencia, int numero, double salario, double limite, std\+::string tipo)
+\begin{DoxyCompactList}\small\item\em Construtor de conta. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classconta_a1653e3753698d02fe0bfcfdc3301ff5c}\label{classconta_a1653e3753698d02fe0bfcfdc3301ff5c}} 
+void {\bfseries set\+Saldo} (double valor)
+\item 
+\mbox{\Hypertarget{classconta_ad4f5c632b73ee60998134998572ef84d}\label{classconta_ad4f5c632b73ee60998134998572ef84d}} 
+std\+::string {\bfseries get\+Agencia} ()
+\item 
+\mbox{\Hypertarget{classconta_a819fb9e7799572a2c0dec38c99535877}\label{classconta_a819fb9e7799572a2c0dec38c99535877}} 
+int {\bfseries get\+Numero} ()
+\item 
+\mbox{\Hypertarget{classconta_a6fe329855fbe72be943ac41252074e86}\label{classconta_a6fe329855fbe72be943ac41252074e86}} 
+double {\bfseries get\+Saldo} ()
+\item 
+\mbox{\Hypertarget{classconta_a90eb992b9d9ea3ad16544320485b84c1}\label{classconta_a90eb992b9d9ea3ad16544320485b84c1}} 
+double {\bfseries get\+Limite} ()
+\item 
+\mbox{\Hypertarget{classconta_a8419db01baca870b25e8a4d0e6df606e}\label{classconta_a8419db01baca870b25e8a4d0e6df606e}} 
+std\+::string {\bfseries get\+Tipo} ()
+\item 
+\mbox{\Hypertarget{classconta_a729c6bf15d4483baa63e0044c435d901}\label{classconta_a729c6bf15d4483baa63e0044c435d901}} 
+std\+::vector$<$ \mbox{\hyperlink{classmovimentacao}{movimentacao}} $>$ {\bfseries get\+Transacoes} ()
+\item 
+\mbox{\Hypertarget{classconta_a179d06e5ce3c11ecef79d24ed7446754}\label{classconta_a179d06e5ce3c11ecef79d24ed7446754}} 
+void {\bfseries Transacao} (std\+::string aux, double valor, std\+::string tipo)
+\item 
+\mbox{\Hypertarget{classconta_aa8a70d2a97179aa2a580ca17007e2c5d}\label{classconta_aa8a70d2a97179aa2a580ca17007e2c5d}} 
+void {\bfseries print\+Conta} ()
+\item 
+\mbox{\Hypertarget{classconta_a40fb7a725ecf0ce46bf822523e633e77}\label{classconta_a40fb7a725ecf0ce46bf822523e633e77}} 
+void {\bfseries print\+Transacoes} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classconta_af6890014c4ac1bf8356485603a9904b8}\label{classconta_af6890014c4ac1bf8356485603a9904b8}} 
+std\+::string {\bfseries m\+\_\+agencia}
+\item 
+\mbox{\Hypertarget{classconta_a1aea638dc5bb9385374fba20f6ffe201}\label{classconta_a1aea638dc5bb9385374fba20f6ffe201}} 
+int {\bfseries m\+\_\+numero}
+\item 
+\mbox{\Hypertarget{classconta_a411fb41f6e84b6d8ccb1153025b76ee7}\label{classconta_a411fb41f6e84b6d8ccb1153025b76ee7}} 
+double {\bfseries m\+\_\+saldo}
+\item 
+\mbox{\Hypertarget{classconta_a71e60ccd4e8a2492647b5d07ee1444b2}\label{classconta_a71e60ccd4e8a2492647b5d07ee1444b2}} 
+double {\bfseries m\+\_\+limite}
+\item 
+\mbox{\Hypertarget{classconta_ae6bde0ca5a0777d9bb69676193de931d}\label{classconta_ae6bde0ca5a0777d9bb69676193de931d}} 
+std\+::string {\bfseries m\+\_\+tipo}
+\item 
+\mbox{\Hypertarget{classconta_ac505bb6ecfe199c5f2d227359bf0821d}\label{classconta_ac505bb6ecfe199c5f2d227359bf0821d}} 
+std\+::vector$<$ \mbox{\hyperlink{classmovimentacao}{movimentacao}} $>$ {\bfseries m\+\_\+transacoes}
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classconta_a56dd4dac755dbbcda1d7fdb61bb8245f}\label{classconta_a56dd4dac755dbbcda1d7fdb61bb8245f}} 
+\index{conta@{conta}!conta@{conta}}
+\index{conta@{conta}!conta@{conta}}
+\subsubsection{\texorpdfstring{conta()}{conta()}}
+{\footnotesize\ttfamily conta\+::conta (\begin{DoxyParamCaption}\item[{std\+::string}]{agencia,  }\item[{int}]{numero,  }\item[{double}]{saldo,  }\item[{double}]{limite,  }\item[{std\+::string}]{tipo }\end{DoxyParamCaption})}
+
+
+
+Construtor de conta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em agencia,numero} & da conta, saldo, limite da transação, tipo da conta, corrente ou poupança \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+conta.\+h\item 
+conta.\+cpp\end{DoxyCompactItemize}

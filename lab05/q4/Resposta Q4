@@ -1,0 +1,5 @@
+Questão 4:
+	O propósito do código em questão é receber uma sequência genérica(no caso da questão foi gerada de 1 a 9), e operar a função square(eleva ao quadrado o elemento da sequência original) dentro dessa sequência, armazenando em um vector específico.
+	O método back_inserter da biblioteca iterator, foi utilizado como uma espécie de push_back do iterador utilizado, ou seja, ele pegava o iterador it no caso e inseria o elemento após sua transformação no fim do vector col2.
+	O vector foi utilizado com o intuito de alocação como um container.
+	O método transform da biblioteca algorithm, foi utilizado para dada a sequência col1, transformar cada elemento com base na função square e armazenar os elementos transformados no vector col2. Para isso utilizou-se toda a extensão do col1, do begin ao end. Utilizou-se de artifícios de inserção no final de iteradores já abordados na resposta e por fim a função square que tinha como objetivo elevar ao quadrado o elemento recebido e retorná-lo em sequência.

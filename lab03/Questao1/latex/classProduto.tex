@@ -1,0 +1,80 @@
+\hypertarget{classProduto}{}\section{Produto Class Reference}
+\label{classProduto}\index{Produto@{Produto}}
+
+
+{\ttfamily \#include $<$produto.\+h$>$}
+
+Inheritance diagram for Produto\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classProduto}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProduto_a12dc783d4f1e016d1eefea0b3f83a6b0}\label{classProduto_a12dc783d4f1e016d1eefea0b3f83a6b0}} 
+{\bfseries Produto} (std\+::string \+\_\+codigo, std\+::string \+\_\+descricao, double \+\_\+preco)
+\item 
+\mbox{\Hypertarget{classProduto_aa8e9057d5f0ac3d145333223cb513b3e}\label{classProduto_aa8e9057d5f0ac3d145333223cb513b3e}} 
+std\+::string {\bfseries get\+Cod\+Barras} ()
+\item 
+\mbox{\Hypertarget{classProduto_ada2c72e139e09afa967aa06a4290d5f8}\label{classProduto_ada2c72e139e09afa967aa06a4290d5f8}} 
+std\+::string {\bfseries get\+Descricao} ()
+\item 
+\mbox{\Hypertarget{classProduto_a53548783d7fad3ea6d5e000fa2227dcf}\label{classProduto_a53548783d7fad3ea6d5e000fa2227dcf}} 
+double {\bfseries get\+Preco} ()
+\item 
+\mbox{\Hypertarget{classProduto_a8f8e7d58e53d3f175bc41b2481dbf477}\label{classProduto_a8f8e7d58e53d3f175bc41b2481dbf477}} 
+void {\bfseries set\+Cod\+Barras} (std\+::string \+\_\+codigo)
+\item 
+\mbox{\Hypertarget{classProduto_a35b8ac377821ca2197becf75e1063509}\label{classProduto_a35b8ac377821ca2197becf75e1063509}} 
+void {\bfseries set\+Descricao} (std\+::string \+\_\+descricao)
+\item 
+\mbox{\Hypertarget{classProduto_a207ec4b3438d376227ca3053a14669cf}\label{classProduto_a207ec4b3438d376227ca3053a14669cf}} 
+void {\bfseries set\+Preco} (double \+\_\+preco)
+\item 
+double \mbox{\hyperlink{classProduto_a4b1186b555e78a10bc43dceceb2fde23}{operator+}} (\mbox{\hyperlink{classProduto}{Produto}} \&T)
+\item 
+\mbox{\Hypertarget{classProduto_a1d4f71551ca7db0485475e1492d2dab1}\label{classProduto_a1d4f71551ca7db0485475e1492d2dab1}} 
+double {\bfseries operator-\/} (\mbox{\hyperlink{classProduto}{Produto}} \&T)
+\item 
+\mbox{\Hypertarget{classProduto_a847e805b411f2d893977662af67a2381}\label{classProduto_a847e805b411f2d893977662af67a2381}} 
+bool {\bfseries operator==} (\mbox{\hyperlink{classProduto}{Produto}} \&T)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProduto_a2e772f6b851f2a2c7d7bc6853af7ca83}\label{classProduto_a2e772f6b851f2a2c7d7bc6853af7ca83}} 
+std\+::string {\bfseries m\+\_\+cod\+\_\+barras}
+\item 
+\mbox{\Hypertarget{classProduto_aacf69c2cf01b6040138767a47c1e3f4b}\label{classProduto_aacf69c2cf01b6040138767a47c1e3f4b}} 
+std\+::string {\bfseries m\+\_\+descricao}
+\item 
+\mbox{\Hypertarget{classProduto_af4f68aad97167802a1dca2b8ddb188eb}\label{classProduto_af4f68aad97167802a1dca2b8ddb188eb}} 
+double {\bfseries m\+\_\+preco}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classProduto_a75e56b3684b7859fc15d147b7d27f6b0}\label{classProduto_a75e56b3684b7859fc15d147b7d27f6b0}} 
+std\+::ostream \& {\bfseries operator$<$$<$} (std\+::ostream \&o, \mbox{\hyperlink{classProduto}{Produto}} const \&t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Se fez necessário ajustar de short para double a variável \+\_\+preco para compreender números decimais. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classProduto_a4b1186b555e78a10bc43dceceb2fde23}\label{classProduto_a4b1186b555e78a10bc43dceceb2fde23}} 
+\index{Produto@{Produto}!operator+@{operator+}}
+\index{operator+@{operator+}!Produto@{Produto}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily double Produto\+::operator+ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProduto}{Produto}} \&}]{T }\end{DoxyParamCaption})}
+
+Criação dos métodos de sobrecarga\+: O método de soma e subtração retornam um valor float referente a soma ou subtração dos produtos. O método de igualdade compara os produtos e retorna verdadeiro em caso de igualdade, e falso caso contrário. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+produto.\+h\item 
+produto.\+cpp\end{DoxyCompactItemize}

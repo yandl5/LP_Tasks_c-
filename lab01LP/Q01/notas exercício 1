@@ -1,0 +1,7 @@
+Aluno:Yan Carlos Rocha da Silva
+Problemas encontrados na realização do exercício 1:
+	-Obtenção do conhecimento básico da classe vector.
+	-referenciamento de objetos com this.
+	-problemas lógicos distintos.
+
+Linha de comando para compilação: g++ -Wall -pedantic -std=c++11 -o t -O0 data.cpp funcionario.cpp empresa.cpp cadastro.cpp main.cpp

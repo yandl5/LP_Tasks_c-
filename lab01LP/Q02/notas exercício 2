@@ -1,0 +1,5 @@
+Aluno:Yan Carlos Rocha da Silva
+Problemas encontrados na realização do exercício 2:
+	-Dificuldades encontradas com o this que foram sanadas no exercício 1 ajudaram na implementação dessa questão.
+
+Linha de comando para compilação: g++ -Wall -pedantic -std=c++11 -o t -O0 dado.cpp jogador.cpp jogo.cpp main.cpp
